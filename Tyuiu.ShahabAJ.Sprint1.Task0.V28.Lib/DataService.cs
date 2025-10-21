@@ -6,6 +6,7 @@ namespace Tyuiu.ShahabAJ.Sprint1.Task0.V28.Lib
     {
         public DataService()
         {
+
         }
 
         public double Calculate()
