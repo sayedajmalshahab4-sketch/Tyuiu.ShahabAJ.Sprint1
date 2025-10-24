@@ -6,16 +6,12 @@ namespace Tyuiu.ShahabAJ.Sprint1.Task3.V6.Lib
     {
         public double TravelCost(double distance, double fuelConsumption, double pricePerLiter)
         {
-            // Расчет общего расстояния (туда и обратно)
-            double totalDistance = distance * 2;
+            double totalCost = distance;
+            totalCost *= 2;         // Умножаем на 2 (туда и обратно)
+            totalCost *= fuelConsumption; // Умножаем на расход бензина
+            totalCost *= pricePerLiter;   // Умножаем на цену бензина
+            totalCost /= 100;        // Делим на 100 (норма расхода на 100 км)
 
-            // Расчет необходимого количества бензина
-            double fuelNeeded = (totalDistance * fuelConsumption) / 100;
-
-            // Расчет общей стоимости
-            double totalCost = fuelNeeded * pricePerLiter;
-
-            // Округление до 3 знаков после запятой
             return Math.Round(totalCost, 3);
         }
     }
