@@ -2,7 +2,15 @@
 
 namespace Tyuiu.ShahabAJ.Sprint1.Task5.V7.Lib
 {
-    public class DataService ISprint1Task6V14
+    public class DataService
+    {
+        public int CalculateHours(double f)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    ISprint1Task6V14
     {
         public int CalculateHours(double f)
         {
