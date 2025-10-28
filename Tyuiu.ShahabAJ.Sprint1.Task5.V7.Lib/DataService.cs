@@ -2,7 +2,7 @@
 
 namespace Tyuiu.ShahabAJ.Sprint1.Task5.V7.Lib
 {
-    public class DataService
+    public class DataService ISprint1Task6V14
     {
         public int CalculateHours(double f)
         {
