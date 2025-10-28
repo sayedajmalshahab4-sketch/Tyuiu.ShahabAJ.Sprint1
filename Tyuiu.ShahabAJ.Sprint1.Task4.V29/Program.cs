@@ -9,20 +9,20 @@ namespace Tyuiu.ShahabAJ.Sprint1.Task4.V29
         {
             DataService ds = new DataService();
 
-            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("*************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
-            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("*************************");
 
-            Console.Write("Введите значение x: ");
+            Console.Write("Введите x: ");
             double x = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Введите значение y: ");
+            Console.Write("Введите y: ");
             double y = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine();
-            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("*************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                             *");
-            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("*************************");
 
             double result = ds.Calculate(x, y);
             Console.WriteLine($"Результат: {result}");
@@ -31,5 +31,3 @@ namespace Tyuiu.ShahabAJ.Sprint1.Task4.V29
         }
     }
 }
-
-
