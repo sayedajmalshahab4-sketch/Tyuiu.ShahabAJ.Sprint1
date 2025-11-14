@@ -1,7 +1,7 @@
 ﻿using System;
-using Tyuiu.ShahabAJ.Sprint1.Task5.V7.Lib;
+using Tyuiu.ShahabAJ.Sprint1.Task5.V0.Lib;
 
-namespace Tyuiu.ShahabAJ.Sprint1.Task5.V7
+namespace Tyuiu.ShahabAJ.Sprint1.Task5.V0
 {
     class Program
     {
@@ -13,16 +13,16 @@ namespace Tyuiu.ShahabAJ.Sprint1.Task5.V7
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Console.Write("Введите угол поворота часовой стрелки f (0 < f < 360) -> ");
-            double f = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Введите x: ");
+            double x = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine();
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                             *");
             Console.WriteLine("***************************************************************************");
 
-            int result = ds.AngleToHoursMinutes(f);
-            Console.WriteLine($"Количество полных часов: {result} ч.");
+            int res = Convert.ToInt32(ds.Calculate(x));
+            Console.WriteLine(res);
 
             Console.ReadKey();
         }
