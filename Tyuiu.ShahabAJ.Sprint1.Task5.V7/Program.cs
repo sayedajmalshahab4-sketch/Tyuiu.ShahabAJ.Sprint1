@@ -21,7 +21,7 @@ namespace Tyuiu.ShahabAJ.Sprint1.Task5.V7
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                             *");
             Console.WriteLine("***************************************************************************");
 
-            int result = ds.CalculateHours(f);
+            int result = ds.AngleToHoursMinutes(f);
             Console.WriteLine($"Количество полных часов: {result} ч.");
 
             Console.ReadKey();

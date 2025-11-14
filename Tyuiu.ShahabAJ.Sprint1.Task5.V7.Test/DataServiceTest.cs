@@ -7,22 +7,22 @@ namespace Tyuiu.ShahabAJ.Sprint1.Task5.V7.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidCalculateHours()
+        public void ValidAngleToHoursMinutes()
         {
             DataService ds = new DataService();
             double f = 90;
             int wait = 3;
-            int result = ds.CalculateHours(f);
+            int result = ds.AngleToHoursMinutes(f);
             Assert.AreEqual(wait, result);
         }
 
         [TestMethod]
-        public void ValidCalculateHours2()
+        public void ValidAngleToHoursMinutes2()
         {
             DataService ds = new DataService();
             double f = 180;
             int wait = 6;
-            int result = ds.CalculateHours(f);
+            int result = ds.AngleToHoursMinutes(f);
             Assert.AreEqual(wait, result);
         }
     }
