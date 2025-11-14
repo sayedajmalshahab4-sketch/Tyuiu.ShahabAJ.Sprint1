@@ -16,5 +16,10 @@ namespace Tyuiu.ShahabAJ.Sprint1.Task5.V0.Lib
 
             return minutes;
         }
+
+        public double Calculate(double x)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
