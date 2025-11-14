@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -13,7 +13,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.ShahabAJ.Sprint1\Tyuiu.ShahabAJ.Sprint1.Task3.V6.Lib\Tyuiu.ShahabAJ.Sprint1.Task3.V6.Lib.csproj" />
+    <ProjectReference Include="..\Tyuiu.ShahabAJ.Sprint1.Task3.V6.Lib\Tyuiu.ShahabAJ.Sprint1.Task3.V6.Lib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="tyuiu.cources.programming.interfaces">
+      <HintPath>..\tyuiu.cources.programming.interfaces.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

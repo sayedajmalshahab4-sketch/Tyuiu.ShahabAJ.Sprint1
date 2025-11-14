@@ -7,7 +7,7 @@ namespace Tyuiu.ShahabAJ.Sprint1.Task3.V6.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidExpression()
+        public void ValidTravelCost()
         {
             DataService ds = new DataService();
             double distance = 67;
