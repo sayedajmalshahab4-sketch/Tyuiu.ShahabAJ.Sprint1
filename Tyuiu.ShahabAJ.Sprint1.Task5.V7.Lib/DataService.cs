@@ -7,14 +7,14 @@ namespace Tyuiu.ShahabAJ.Sprint1.Task5.V0.Lib
     {
         public int AngleToHoursMinutes(double f)
         {
-            // 360 градусов = 12 часов = 720 минут
-            // 1 градус = 2 минуты времени
-            double totalMinutes = f * 2;
+            // Часовая стрелка: 360° = 12 часов, значит 1 час = 30°
+            // Для первой половины дня (0-12 часов)
+            double hours = f / 30.0;
 
-            // Получаем целое количество минут
-            int minutes = (int)Math.Round(totalMinutes);
+            // Берем целую часть часов
+            int fullHours = (int)hours;
 
-            return minutes;
+            return fullHours;
         }
 
         public double Calculate(double x)
