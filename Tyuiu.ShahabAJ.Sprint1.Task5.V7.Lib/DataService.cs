@@ -7,13 +7,14 @@ namespace Tyuiu.ShahabAJ.Sprint1.Task5.V0.Lib
     {
         public int AngleToHoursMinutes(double f)
         {
-            throw new NotImplementedException();
-        }
+            // 360 градусов = 12 часов = 720 минут
+            // 1 градус = 2 минуты времени
+            double totalMinutes = f * 2;
 
-        public double Calculate(double x)
-        {
-            double result = Math.Pow(x, 2) / Math.Sqrt(x);
-            return result;
+            // Получаем целое количество минут
+            int minutes = (int)Math.Round(totalMinutes);
+
+            return minutes;
         }
     }
 }
